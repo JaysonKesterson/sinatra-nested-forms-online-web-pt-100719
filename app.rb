@@ -17,7 +17,7 @@ module FormsLab
       params[:pirate][:ships].each do |attrs|
         Ship.new(attrs)
       end
-
+      binding.pry
       @ships = Ship.all
       erb :'pirates/show'
     end
